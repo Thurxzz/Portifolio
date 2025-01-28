@@ -1,0 +1,454 @@
+/* Configurações Globais */
+* {
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no tamanho total do elemento */
+    text-decoration: none; /* Remove a decoração de texto, como sublinhado */
+    scroll-behavior: smooth; /* Adiciona rolagem suave em links âncora */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo Geral de Textos */
+h1, h2 {
+    color: black; /* Define a cor preta para os títulos */
+}
+
+p {
+    color: black; /* Define a cor preta para parágrafos */
+}
+
+span {
+    color: orangered; /* Define a cor laranja-avermelhada para spans */
+}
+
+/* Estilos Específicos por ID */
+#n1 {
+    color: orangered; /* Cor específica para elemento com ID n1 */
+}
+
+#n2 {
+    color: grey; /* Cor específica para elemento com ID n2 */
+}
+
+/* Estilos para Labels */
+label {
+    color: black;   
+}
+
+/* Estilo Geral do Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DFF2EB; /* Cor de fundo suave */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    scroll-behavior: smooth; /* Rolagem suave */
+    transition: ease-in 1s; /* Transição suave para mudanças */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4A628A; /* Fundo azul-escuro */
+    color: black; /* Cor preta para o texto */
+    padding: 20px; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+header h1 {
+    margin: 0; /* Remove margem padrão */
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    animation: fadeIn 2s ease-in-out; /* Animação de fade-in */
+}
+/*
+/* Navegação */
+
+nav {
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 10px 0; /* Espaçamento interno vertical */
+    text-transform: uppercase; /* Texto em letras maiúsculas */
+    list-style: none; /* Remove os estilos de lista padrão */
+}
+
+nav ul {
+    list-style: none; /* Remove estilos de lista padrão */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os itens na horizontal */
+}
+
+nav ul li {
+    position: static; /* Define posição padrão */
+    margin: 0 10px; /* Espaçamento horizontal entre itens */
+    z-index: 1; /* Garante que os submenus fiquem visíveis */
+}
+
+nav ul li a {
+    color: #DFF2EB; /* Cor preta para links */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 20px; /* Espaçamento interno */
+    display: block; /* Garante que o link ocupe todo o espaço */
+}
+
+nav ul li a:hover {
+    color: orangered; /* Cor branca ao passar o mouse */
+    background: #DFF2EB; /* Fundo preto ao passar o mouse */
+    border-radius: 4px; /* Arredonda os cantos */
+}
+
+nav ul ul {
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute; /* Posiciona relativo ao pai */
+    background: #7AB2D3; /* Fundo branco */
+}
+
+nav ul li:hover > ul {
+    display: block; /* Exibe o submenu ao passar o mouse */
+}
+
+nav ul ul li {
+    width: 200px; /* Define largura para itens do submenu */
+    padding: 2px; /* Espaçamento interno */
+}
+
+nav ul ul li a {
+    padding: 10px; /* Define espaçamento para links do submenu */
+    color: black; /* Cor preta */
+}
+
+nav ul ul li a:hover {
+    color: orangered; /* Cor branca ao passar o mouse */
+    background-color: #DFF2EB; /* Fundo preto ao passar o mouse */
+}
+
+/* Conteúdo Principal */
+.container {
+    max-width: 1200px; /* Define largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Seções */
+.section, .sobre-mim {
+    margin-bottom: 40px; /* Espaçamento inferior */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 0px 10px black; /* Sombra */
+    padding: 20px; /* Espaçamento interno */
+    background: #B9E5E8; /* Fundo azul-claro */
+    transform: translateY(20px); /* Move ligeiramente para baixo */
+    transition: all 0.6s ease-in-out; /* Transição suave */
+    padding-bottom: 50px; /* Espacamento inferior */
+}
+
+.section p {
+    text-align: center; /* Centraliza texto */
+    padding-top: 10px; /* Espaçamento superior */
+}
+
+.sobre-mim img {
+    border: 1px solid black; /* Borda preta */
+    background-color: #DFF2EB; /* Fundo claro */
+    max-width: 200px;
+    transition: transform 0.5s ease; /* Transição para efeito de zoom */
+}
+
+.sobre-mim img:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.sub-sobre-mim{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-mim-skills {
+    display: flex; /* Coloca os itens lado a lado */
+    gap: 20px; /* Espaço entre as colunas */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha pelo topo */
+    padding: 10px 10px 10px;
+}
+
+.sobre-mim-skills h2{
+    text-align: center; /* Deixa o texto alinhado no centro*/
+}
+
+.sobre-mim-skills li{
+    list-style: none; /* Remove a marcação da lista */
+    padding-left: 10px; /* Espaçamento interno */
+}
+
+.soft-skills, .hard-skills {
+    flex: 1; /* Faz as colunas terem o mesmo tamanho */
+    padding: 20px; /* Espaçamento interno */
+    background: #DFF2EB;/* Fundo claro*/
+    border-radius: 8px;/* Bordas redondas*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Botão de Download */
+
+@keyframes glowing-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      box-shadow: 0 0 0 30px rgba(190, 12, 12, 0);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 30%;
+    padding: 10px 15px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    color: white; /* Texto branco */
+    background-color: black; /* Fundo preto */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Aponta cursor ao passar o mouse */
+    text-transform: uppercase; /* Letras maiúsculas */
+    transition: background-color 0.5s ease; /* Transição de cor suave */
+}
+
+.download-btn:hover {
+    background-color: orangered; /* Muda o fundo ao passar o mouse */
+    animation: glowing-pulse 2s infinite;
+}
+
+/* Grid de Projetos */
+.projetos {
+    display: grid; /* Layout de grade */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colunas dinâmicas */
+    gap: 20px; /* Espaçamento entre itens */
+    cursor: pointer; /* Aponta cursor ao passar o mouse */
+}
+
+.projeto-item {
+    border: 1px solid #afacac; /* Borda cinza */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    background: #DFF2EB; /* Fundo claro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.2s; /* Transições suaves */
+}
+
+.projeto-item:hover {
+    transform: translateY(-5px); /* Move para cima */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); /* Sombra mais intensa */
+}
+
+.projeto-item img {
+    max-width: 100%; /* Largura total */
+    height: auto; /* Altura proporcional */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Qualificações */
+.qualificacoes {
+    display: grid; /* Exibe as qualificações como um grid */
+    grid: 1fr; /* Define uma única linha no grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas ajustáveis automaticamente */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px 20px; /* Espaçamento interno ao redor do container */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+}
+
+.qualificacao-item {
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border: 1px solid #afacac; /* Adiciona uma borda cinza clara */
+    border-radius: 8px; /* Arredonda os cantos do item */
+    background: #DFF2EB; /* Define uma cor de fundo verde claro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona sombra leve ao redor */
+    transition: transform 0.3s, box-shadow 0.2s; /* Define animação para transformações e sombras */
+}
+
+.qualificacao-item:hover {
+    transform: translateY(-5px); /* Eleva o item ligeiramente ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Mantém a sombra padrão */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); /* Adiciona sombra mais forte ao passar o mouse */
+}
+
+.qualificacao-item img {
+    max-width: 100%; /* Ajusta a largura da imagem ao tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+/* Formulário - Container Principal */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    gap: 15px; /* Espaçamento entre os campos */
+    max-width: 600px; /* Define largura máxima */
+    margin: auto; /* Centraliza o formulário na tela */
+}
+
+/* Estilo dos Grupos do Formulário */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Alinha o label e o campo de entrada verticalmente */
+}
+
+/* Estilo dos Labels */
+.form-group label {
+    margin-bottom: 5px; /* Espaçamento entre o label e o campo */
+    font-weight: bold; /* Deixa o texto do label em negrito */
+}
+
+/* Estilo dos Inputs e Textareas */
+.form-group input,
+.form-group textarea {
+    padding: 10px; /* Espaçamento interno nos campos */
+    border: 1px solid #333; /* Define uma borda cinza escura */
+    border-radius: 5px; /* Arredonda os cantos */
+    font-size: 1em; /* Ajusta o tamanho da fonte */
+}
+
+/* Botão de Enviar */
+.form-button {
+    padding: 10px 15px; /* Espaçamento interno no botão */  
+    background: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Arredonda os cantos */
+    cursor: pointer; /* Mostra um cursor interativo ao passar o mouse */
+    transition: background-color 0.5s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Estilo do Botão ao Passar o Mouse */
+.form-button:hover {
+    background-color: orangered; /* Altera o fundo para laranja ao passar o mouse */
+    animation: glowing-pulse 2s infinite;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 50px; /* Espaçamento interno */
+    background: #7AB2D3; /* Fundo azul-claro */
+    border-top: grey; /* Borda preta */
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Rodapé */
+footer p {
+    color: rgb(0, 0, 0); /* Define cor preta para o texto do rodapé */
+}
+
+footer #p2 {
+    text-align: right; /* Alinha o texto à direita */
+    color: rgb(0, 0, 0); /* Define cor preta */
+}
+
+footer a {
+    color: black; /* Define cor preta para os links no rodapé */
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    display: flex; /* Exibe os itens como um flex container */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    gap: 15px; /* Espaçamento entre os ícones */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.social-icons ul {
+    display: flex; /* Exibe os itens em linha */
+    gap: 15px; /* Espaçamento entre os itens */
+    padding: 10px; /* Remove preenchimento padrão */
+    margin: 0; /* Remove margem padrão */
+}
+
+.social-icons ul li {
+    display: inline-block; /* Exibe os itens em linha */
+}
+
+.social-icons ul li a {
+    font-size: 1.7em; /* Tamanho da fonte dos ícones */
+    color: black; /* Cor preta dos ícones */
+}
+
+.social-icons ul li a:hover{
+    color: orangered;
+}
+
+/* Rodapé Adicional */
+.rodape {
+    display: block; /* Exibe o rodapé como bloco */
+    justify-items: center; /* Centraliza itens (quando aplicável) */
+}
+
+.rodape a {
+    text-align: center; /* Centraliza o texto */
+    color: black; /* Cor preta para links */
+    font-size: 1.25em; /* Tamanho da fonte maior para destaque */
+}
+
+.rodape #p1 {
+    float: right; /* Alinha o texto à direita */
+    font-size: 10px; /* Reduz tamanho da fonte */
+}
+
+.rodape #p1 a img {
+    width: 7.5em; /* Define a largura da imagem */
+    background-color: white; /* Fundo branco para a imagem */
+}
+
+/* Media Queries (Estilos Responsivos) */
+@media (max-width: 768px) {
+    .sub-sobre-mim {
+        flex-direction: column; /* Alinha a imagem acima do texto em telas pequenas */
+        align-items: center; /* Centraliza conteúdo verticalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    .imagem {
+        max-width: 120px; /* Reduz o tamanho da imagem em telas menores */
+        margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    }
+
+    p {
+        font-size: 14px; /* Diminui o tamanho da fonte em telas menores */
+        padding: 0; /* Remove espaçamento lateral */
+    }
+
+    nav ul {
+        display: inline-block;
+        flex-direction: row;
+        z-index: 1;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr; /* Um item por linha em telas pequenas */
+    }
+
+    .qualificacoes {
+        grid-template-columns: 1fr; /* Um item por linha em telas pequenas */
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa invisível */
+    }
+    to {
+        opacity: 1; /* Gradualmente se torna visível */
+    }
+}
+
